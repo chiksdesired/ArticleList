@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ivProfileIcon"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <com.wkb.jet2tt.utils.CustomTextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/ivProfileIcon"
+                android:text="UserName"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <com.wkb.jet2tt.utils.CustomTextView
+                android:id="@+id/tvUserDesignation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvUserName"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/ivProfileIcon"
+                android:text="UserDesignation"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15sdp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp">
+
+
+        </ImageView>
+
+        <com.wkb.jet2tt.utils.CustomTextView
+            android:id="@+id/tvArticleContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserArticles"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.wkb.jet2tt.utils.CustomTextView
+                android:id="@+id/tvArticleLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="100 Likes"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <com.wkb.jet2tt.utils.CustomTextView
+                android:id="@+id/tvArticleComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="100 Comments"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
